@@ -4,10 +4,10 @@
     "slug": "my_favourite_places",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/place.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/ic_launcher.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -18,7 +18,11 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ],
+      "package": "com.royanurag10.my_favourite_places"
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -30,6 +34,11 @@
           "cameraPermission": "The app needs access to your camera in order to take photos of your favorite places."
         }
       ]
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "7b1eb9ed-9077-4462-8757-0cd485ab69ca"
+      }
+    }
   }
 }
